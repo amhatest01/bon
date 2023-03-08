@@ -19,7 +19,7 @@ model.load_state_dict(load_state_dict('./models/control_sd15_scribble.pth', loca
 model = model.cuda()
 ddim_sampler = DDIMSampler(model)
 
-
+#change
 def process(input_image, prompt, a_prompt, n_prompt, num_samples, image_resolution, ddim_steps, guess_mode, strength, scale, seed, eta):
     with torch.no_grad():
         img = resize_image(HWC3(input_image), image_resolution)
